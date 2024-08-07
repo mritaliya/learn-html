@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100%;
+            
+        }
+        .container{
+            background-color: antiquewhite;
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+        }
+        .iteam{
+            padding: 2rem;
+            height: 150px;
+            width: 150px;
+            background-color: rgba(0, 0, 255, 0.523);
+            border: 2px solid black;
+        }
+        #rx:hover{
+            transform: rotateX(45deg);
+        }
+        #ry:hover{
+            transform: rotatey(45deg);
+        }
+        #rz:hover{
+
+            transform: rotateZ(45deg);
+        }
+        #tx:hover{
+            transform: translateX(50px);
+        }
+        #ty:hover{
+            transform: translatey(50px);
+        }
+        #tz:hover{
+            transform:perspective(100px) translatez(50px);
+        }
+        #sx:hover{
+            transform: scaleX(1.5);
+        }
+        #sy:hover{
+            transform: scaley(1.5);
+        }
+        #sz:hover{
+            transform:perspective(100px) rotatey(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="iteam" id="rx">rotatex</div>
+        <div class="iteam" id="ry">rotatey</div>
+        <div class="iteam" id="rz">rotatez</div>
+        <div class="iteam" id="tx">transletx</div>
+        <div class="iteam" id="ty">translety</div>
+        <div class="iteam" id="tz">transletz</div>
+        <div class="iteam" id="sx">scalex</div>
+        <div class="iteam" id="sy">scaley</div>
+        <div class="iteam" id="sz">scalez</div>
+    </div>
+</body>
+</html>
